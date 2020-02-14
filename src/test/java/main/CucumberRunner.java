@@ -71,9 +71,11 @@ public class CucumberRunner extends AbstractTestNGCucumberTests {
 		LoadConfigProperty();
 		// configures the driver path
 		configureDriverPath();
-		if (config.getProperty("browserType").equals("firefox")) {
+		String value=System.getenv("browserName");
+
+		if (value.equals("firefox")) {
 			driver = new FirefoxDriver();
-		} else if (config.getProperty("browserType").equals("chrome")) {
+		} else if (value.equals("chrome")) {
 			/*ChromeOptions options = new ChromeOptions();
 			options.addArguments("--headless");
 			options.addArguments("--disable-gpu");
