@@ -72,6 +72,11 @@ public class CucumberRunner extends AbstractTestNGCucumberTests {
 		// configures the driver path
 		configureDriverPath();
 		String value=System.getenv("browserName");
+System.out.println("**************************************************************************");
+
+System.out.println(value);	
+
+System.out.println("**************************************************************************");		
 
 		if (value.equals("firefox")) {
 			driver = new FirefoxDriver();
