@@ -72,15 +72,9 @@ public class CucumberRunner extends AbstractTestNGCucumberTests {
 		// configures the driver path
 		configureDriverPath();
 		String value=System.getenv("browserName");
-	    String xmlValue=System.getenv("xml");
-	
 System.out.println("**************************************************************************");
 
-System.out.println(value);
-System.out.println("****************************************************************************);	
-
-System.out.println(xmlValue);	
-	
+System.out.println(value);	
 
 System.out.println("**************************************************************************");		
 
